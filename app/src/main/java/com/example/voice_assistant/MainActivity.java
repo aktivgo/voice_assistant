@@ -139,7 +139,7 @@ public class MainActivity extends AppCompatActivity {
         textToSpeech = new TextToSpeech(getApplicationContext(), i -> {
             if (i != TextToSpeech.ERROR) {
                 textToSpeech.setLanguage(new Locale("ru"));
-                textToSpeech.setPitch((float)2.3);
+                textToSpeech.setPitch((float)2.1);
                 textToSpeech.setSpeechRate((float)1.3);
             }
         });
