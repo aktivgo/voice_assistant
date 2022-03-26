@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="utf-8"?>
 <manifest xmlns:android="http://schemas.android.com/apk/res/android"
-    package="com.example.voiceassistent">
+    xmlns:tools="http://schemas.android.com/tools"
+    package="com.example.voice_assistant">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
 
     <application
         android:allowBackup="true"
-        android:icon="@mipmap/ic_launcher"
+        android:icon="@android:drawable/presence_audio_online"
         android:label="@string/app_name"
-        android:roundIcon="@mipmap/ic_launcher_round"
+        android:roundIcon="@android:drawable/presence_audio_online"
         android:supportsRtl="true"
-        android:theme="@style/Theme.VoiceAssistent"
-        android:usesCleartextTraffic="true">
+        android:theme="@style/Theme.VoiceAssistant"
+        android:usesCleartextTraffic="true"
+        tools:targetApi="m">
         <activity
-            android:name=".MainActivity"
+            android:name="com.example.voice_assistant.MainActivity"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
@@ -26,7 +30,5 @@
             <action android:name="android.intent.action.TTS_SERVICE" />
         </intent>
     </queries>
-
-    <uses-permission android:name="android.permission.INTERNET"/>
 
 </manifest>

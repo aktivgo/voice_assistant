@@ -2,5 +2,4 @@
     <string name="app_name">VoiceAssistant</string>
     <string name="sendButtonText">Send</string>
     <string name="assistantName">Assistant</string>
-    <string name="userName">I am</string>
 </resources>

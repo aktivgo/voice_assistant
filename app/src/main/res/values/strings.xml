@@ -2,5 +2,4 @@
     <string name="app_name">Голосовой ассистент</string>
     <string name="sendButtonText">Отправить</string>
     <string name="assistantName">Ассистент</string>
-    <string name="userName">Я</string>
 </resources>
