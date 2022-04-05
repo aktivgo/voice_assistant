@@ -40,6 +40,6 @@ public class ParsingHtmlService {
             }
         }
 
-        return "";
+        return "Не удалось получить ответ";
     }
 }

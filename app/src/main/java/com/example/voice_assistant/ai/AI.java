@@ -98,11 +98,9 @@ public class AI {
                                     prepareCityName(Objects.requireNonNull(cityName)) + " ";
                             weatherResult += (number < 0) ? "минус " + numberString : numberString;
 
-                            if (number / 10 % 10 == 1) {
-                                weatherResult += " градусов";
-                            } else if (number % 10 == 1) {
+                            if (number % 10 == 1) {
                                 weatherResult += " градус";
-                            } else if (number % 10 == 2 || number % 10 == 4 || number % 10 == 3) {
+                            } else if (number < 5 || (number > 20 && number % 10 >= 2 && number % 10 < 5)) {
                                 weatherResult += " градуса";
                             } else {
                                 weatherResult += " градусов";
@@ -179,7 +177,7 @@ public class AI {
             if (y > 0) {
                 result += y;
 
-                if (y == 1 || (y > 20 && y % 10 == 1)) {
+                if (y % 10 == 1) {
                     result += " год";
                 } else if (y < 5 || (y > 20 && y % 10 >= 2 && y % 10 < 5)) {
                     result += " года";
@@ -203,7 +201,7 @@ public class AI {
             if (d > 0) {
                 result += " " + d;
 
-                if (d == 1 || (d > 20 && d % 10 == 1)) {
+                if (d % 10 == 1) {
                     result += " день";
                 } else if (d < 5 || (d > 20 && d % 10 >= 2 && d % 10 < 5)) {
                     result += " дня";
